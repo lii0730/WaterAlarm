@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		99044A0E27A4EF360031CDF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99044A0D27A4EF360031CDF3 /* AppDelegate.swift */; };
 		99044A1027A4EF360031CDF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99044A0F27A4EF360031CDF3 /* SceneDelegate.swift */; };
-		99044A1227A4EF360031CDF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99044A1127A4EF360031CDF3 /* ViewController.swift */; };
 		99044A1527A4EF360031CDF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99044A1327A4EF360031CDF3 /* Main.storyboard */; };
 		99044A1727A4EF380031CDF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99044A1627A4EF380031CDF3 /* Assets.xcassets */; };
 		99044A1A27A4EF380031CDF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99044A1827A4EF380031CDF3 /* LaunchScreen.storyboard */; };
+		99044A2827A557BD0031CDF3 /* AlarmListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99044A2727A557BD0031CDF3 /* AlarmListViewController.swift */; };
+		99044A2B27A558440031CDF3 /* WaterAlarmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99044A2927A558440031CDF3 /* WaterAlarmCell.swift */; };
+		99044A2C27A558440031CDF3 /* WaterAlarmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99044A2A27A558440031CDF3 /* WaterAlarmCell.xib */; };
+		99044A2E27A559F10031CDF3 /* AddAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99044A2D27A559F10031CDF3 /* AddAlarmViewController.swift */; };
+		99044A3027A55E1A0031CDF3 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99044A2F27A55E1A0031CDF3 /* Alarm.swift */; };
+		99044A3227A576F80031CDF3 /* LocalNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99044A3127A576F80031CDF3 /* LocalNotificationCenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		99044A0A27A4EF360031CDF3 /* WaterAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99044A0D27A4EF360031CDF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99044A0F27A4EF360031CDF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		99044A1127A4EF360031CDF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		99044A1427A4EF360031CDF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99044A1627A4EF380031CDF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99044A1927A4EF380031CDF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99044A1B27A4EF380031CDF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99044A2727A557BD0031CDF3 /* AlarmListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListViewController.swift; sourceTree = "<group>"; };
+		99044A2927A558440031CDF3 /* WaterAlarmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterAlarmCell.swift; sourceTree = "<group>"; };
+		99044A2A27A558440031CDF3 /* WaterAlarmCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WaterAlarmCell.xib; sourceTree = "<group>"; };
+		99044A2D27A559F10031CDF3 /* AddAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmViewController.swift; sourceTree = "<group>"; };
+		99044A2F27A55E1A0031CDF3 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		99044A3127A576F80031CDF3 /* LocalNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +68,16 @@
 			children = (
 				99044A0D27A4EF360031CDF3 /* AppDelegate.swift */,
 				99044A0F27A4EF360031CDF3 /* SceneDelegate.swift */,
-				99044A1127A4EF360031CDF3 /* ViewController.swift */,
 				99044A1327A4EF360031CDF3 /* Main.storyboard */,
 				99044A1627A4EF380031CDF3 /* Assets.xcassets */,
 				99044A1827A4EF380031CDF3 /* LaunchScreen.storyboard */,
 				99044A1B27A4EF380031CDF3 /* Info.plist */,
+				99044A2727A557BD0031CDF3 /* AlarmListViewController.swift */,
+				99044A2927A558440031CDF3 /* WaterAlarmCell.swift */,
+				99044A2A27A558440031CDF3 /* WaterAlarmCell.xib */,
+				99044A2D27A559F10031CDF3 /* AddAlarmViewController.swift */,
+				99044A2F27A55E1A0031CDF3 /* Alarm.swift */,
+				99044A3127A576F80031CDF3 /* LocalNotificationCenter.swift */,
 			);
 			path = WaterAlarm;
 			sourceTree = "<group>";
@@ -128,6 +143,7 @@
 				99044A1A27A4EF380031CDF3 /* LaunchScreen.storyboard in Resources */,
 				99044A1727A4EF380031CDF3 /* Assets.xcassets in Resources */,
 				99044A1527A4EF360031CDF3 /* Main.storyboard in Resources */,
+				99044A2C27A558440031CDF3 /* WaterAlarmCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99044A1227A4EF360031CDF3 /* ViewController.swift in Sources */,
 				99044A0E27A4EF360031CDF3 /* AppDelegate.swift in Sources */,
+				99044A2827A557BD0031CDF3 /* AlarmListViewController.swift in Sources */,
+				99044A2E27A559F10031CDF3 /* AddAlarmViewController.swift in Sources */,
 				99044A1027A4EF360031CDF3 /* SceneDelegate.swift in Sources */,
+				99044A3227A576F80031CDF3 /* LocalNotificationCenter.swift in Sources */,
+				99044A2B27A558440031CDF3 /* WaterAlarmCell.swift in Sources */,
+				99044A3027A55E1A0031CDF3 /* Alarm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

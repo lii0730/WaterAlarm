@@ -6,14 +6,29 @@
 //
 
 import UIKit
+import NotificationCenter
+import UserNotifications
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        UNUserNotificationCenter.current().delegate = self
+        
+        var notificationCenter = UNUserNotificationCenter.current()
+        
+        let authorizationOptions = UNAuthorizationOptions(arrayLiteral: [.alert, .badge, .sound])
+        
+        notificationCenter.requestAuthorization(options: authorizationOptions, completionHandler: { granted, error in
+            if granted {
+                print("granted")
+            }
+            
+            if let error = error {
+                print("ERROR: Notification Authorize:", error)
+            }
+        })
         return true
     }
 
@@ -31,6 +46,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+}
 
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.banner, .list, .badge, .sound])
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        completionHandler()
+    }
 }
 
